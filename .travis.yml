@@ -1,12 +1,4 @@
 language: C
 
 script:
-  - sudo apt update
-  - sudo apt-get install libssl-dev openssl
-  - whereis libssl
-#  - sudo cp libssl.so /usr/lib/x86_64-linux-gnu/libssl.so
-
-  - cd libdill-2.14
-  - ./configure --enable-tls --disable-shared
-  - sudo make install --jobs=4
-  - cd ..
+  -
