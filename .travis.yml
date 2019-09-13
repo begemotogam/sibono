@@ -1,6 +1,7 @@
 language: C
 
 script:
+  - sudo cp libssl.so /usr/lib/x86_64-linux-gnu/libssl.so
   - cd libdill-2.14
   - ./configure --enable-tls --disable-shared
   - sudo make install --jobs=4
