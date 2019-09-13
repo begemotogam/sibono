@@ -1,9 +1,9 @@
 language: C
 
 script:
-  - whereis openssl
-  - whereis libssl
+  - sudo apt-get update
   - sudo apt-get install libssl-dev openssl
+  - whereis libssl
   - sudo cp libssl.so /usr/lib/x86_64-linux-gnu/libssl.so
 
   - cd libdill-2.14
