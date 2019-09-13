@@ -1,0 +1,7 @@
+language: C
+
+script:
+  - cd libdill-2.14
+  - ./configure --enable-tls --disable-shared
+  - sudo make install --jobs=4
+  - cd ..
